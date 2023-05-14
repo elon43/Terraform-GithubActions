@@ -1,0 +1,7 @@
+CIDR_BLOCK        = "10.0.0.0/16"
+CIDR_BLOCK_SUBNET = "10.0.1.0/24"
+NAME              = "stg"
+AMI_ID            = "ami-007855ac798b5175e"
+INSTANCE_TYPE     = "t2.micro"
+REGION            = "us-east-1"
+TENANCY           = "default"
