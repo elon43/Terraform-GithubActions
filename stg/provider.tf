@@ -1,7 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 provider "aws" {
   region  = var.REGION
-  profile = "default"
+#  profile = "default"
 }
 
 # Create a backend using S3
