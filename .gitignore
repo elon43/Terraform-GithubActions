@@ -1,7 +1,7 @@
 **/.terraform/*
-dev/.terraform/**
-stg/.terraform/**
-prod/.terraform/**
+dev/.terraform/providers/**
+stg/.terraform/providers/**
+prod/.terraform/providers/**
 
 *.tfstate
 *.tfstate.
