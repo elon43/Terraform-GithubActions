@@ -42,7 +42,7 @@ resource "aws_subnet" "demo_subnet" {
 # Routing table for VPC
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
 resource "aws_route_table" "demo_route_table" {
- vpc_id = var.vpc_id
+ vpc_id = aws_vpc.demo_vpc.id
 
  route {
    cidr_block = "0.0.0.0/0"

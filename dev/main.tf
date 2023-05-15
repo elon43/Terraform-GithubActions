@@ -1,13 +1,14 @@
 module "vpc" {
   source = "../modules/vpc"
 
-  cidr_block        = var.CIDR_BLOCK
-  vpc_id            = module.vpc.vpc_id
-  tenancy           = var.TENANCY
-  cidr_block_subnet = var.CIDR_BLOCK_SUBNET
-  name              = var.NAME
+  CIDR_BLOCK       = var.CIDR_BLOCK
+#  vpc_id            = module.vpc.vpc_id
+  TENANCY           = var.TENANCY
+  CIDR_BLOCK_SUBNET = var.CIDR_BLOCK_SUBNET
+  NAME              = var.NAME
 }
 
+/*
 module "ec2" {
   source       = "../modules/ec2"
   ami          = var.AMI_ID
@@ -16,3 +17,4 @@ module "ec2" {
   name         = var.NAME
   region       = var.REGION
 }
+*/
